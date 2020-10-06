@@ -39,7 +39,7 @@ let processor = {
             let r = frame.data[i * 4]; // red
             let g = frame.data[i * 4 + 1]; // green
             let b = frame.data[i * 4 + 2]; // blue
-            if (g > 100 && r < 40) frame.data[i * 4 + 3] = 0;
+            if (g > 120 && r < 50) frame.data[i * 4 + 3] = 0;
         }
         this.ctx2.putImageData(frame, 0, 0);
         return;
